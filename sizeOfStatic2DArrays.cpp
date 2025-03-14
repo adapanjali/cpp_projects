@@ -2,12 +2,13 @@
 using namespace std;
 
 int main() {
-    int arr[5][3] = {  // 3 rows, 4 columns
+    int arr[6][3] = {  // 3 rows, 4 columns
         {1, 2, 3},
         {5, 6, 7},
         {9, 10, 11}, 
         {12, 13, 14}, 
-        {15, 16, 17}
+        {15, 16, 17},
+        (18, 19, 20)
     };
 
     cout << "Total size in bytes: " << sizeof(arr) << endl;
