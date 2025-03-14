@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int arr[4][3] = {  // 3 rows, 4 columns
+    int arr[5][3] = {  // 3 rows, 4 columns
         {1, 2, 3},
         {5, 6, 7},
         {9, 10, 11}, 
