@@ -1,3 +1,5 @@
+// Running Sum of 1D Array
+
 #include <iostream>
 #include <vector>
 using namespace std;
