@@ -18,9 +18,22 @@ struct ListNode {
 
      // Constructor that initializes val to x and next to nullptr
     ListNode(int x) : val(x), next(nullptr) {}
-    
+
      // Constructor that initializes val to x and next to the given node
     ListNode(int x, ListNode *next) : val(x), next(next) {}
+
+    // ***** If there was no constructors defined, you can still use aggregate initialization. 
+    // ***** But you cannot use aggregate initialization if you define any constructor. *****
+    // ***** If you define a constructor, you must use it to initialize the object. *****
+    // struct Node {
+    //     int data;
+    //     Node* next;
+    
+    //     Node(int data, Node* next = nullptr) : data(data), next(next) {}
+    // };
+    
+    // Node* head = new Node{10, nullptr}; // ❌ Error: No matching constructor
+    // Node* head = new Node(10); // ✅ OK: Calls constructor with int parameter
 };
 
 void printList(ListNode* head) {
